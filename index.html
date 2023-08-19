@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .main-container
+    {
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+    }
+    .container
+    {
+      display: grid;
+      gap: 9px;
+      grid-template-rows: repeat(5, 1fr);
+      grid-template-columns: repeat(5, 1fr);
+      height: 748px;
+      width: 748px;
+      background-color: black;
+    }
+    .red
+    {
+      background-color: #E72F24;
+      grid-row: span 2;
+      grid-column: span 2;
+      height: 414px;
+      width: 320px;
+    }
+    .white
+    {
+      background-color: #F0F1EC;
+    }
+    .box-1
+    {
+      grid-row: span 2;
+      grid-column: span 3;
+    }
+    .box-2
+    {
+      grid-row: span 2;
+      grid-column: span 2;
+    }
+    .box-3
+    {
+      grid-row: span 2;
+      grid-column: span 2;
+      height: 296px;
+    }
+    .box-4
+    {
+      grid-row: span 2;
+      height: 175px;
+      width: 50px;
+    }
+    .box-5
+    {
+      grid-column: span 2;
+      height: 20px;
+    }
+    .blue
+    {
+      background-color: #004592;
+      height: 130px;
+      width: 50px;
+    }
+    .yellow
+    {
+      background-color: #F9D01E;
+      height: 20px;
+      width: 198px;
+    }
+    .black
+    {
+      background-color: #232629;
+      height: 20px;
+      width: 153px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="main-container">
+    <div class="container">
+      <div class="red"></div>
+      <div class="white box-1"></div>
+      <div class="white box-2"></div>
+      <div class="white box-3"></div>
+      <div class="blue"></div>
+      <div class="white box-4"></div>
+      <div class="white box-5"></div>
+      <div class="yellow"></div>
+      <div class="black"></div>
+    </div>
+  </div>
+</body>
+</html>
